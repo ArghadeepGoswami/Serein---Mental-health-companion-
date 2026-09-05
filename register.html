@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+    <title>Serein - Register</title>
+</head>
+<body>
+
+ <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg serene-navbar sticky-top">
+    <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand serene-brand" href="index.html">
+            <span class="brand-icon">
+                <i class="bi bi-droplet-half"></i>
+            </span>
+            <span class="brand-name">
+                SEREIN
+            </span>
+        </a>
+
+        <!-- MOBILE TOGGLER -->
+        <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#sereneNavbar"
+            aria-controls="sereneNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <!-- NAVIGATION -->
+        <div class="collapse navbar-collapse"
+            id="sereneNavbar">
+            <ul class="navbar-nav mx-auto align-items-lg-center">
+
+                <!-- HOME -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <!-- ABOUT -->
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <!-- CONSULTATION -->
+                <li class="nav-item">
+                    <a class="nav-link" href="consult.html">Consultation</a>
+                </li>
+
+                <!-- MEDIA & AWARDS -->
+                <li class="nav-item">
+                    <a class="nav-link" href="media.html"> Media & Awards </a>
+                </li>
+
+                <!-- RESOURCES DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button"  data-bs-toggle="dropdown" aria-expanded="false"> Resources </a>
+                    <ul class="dropdown-menu resources-menu"
+                        aria-labelledby="resourcesDropdown">
+                        <!-- JOURNAL -->
+                        <li>
+                            <a class="dropdown-item" href="journal.html">
+                                <span class="resource-icon">
+                                    <i class="bi bi-journal-text"></i>
+                                </span>
+                                <span>
+                                    <strong>Journal</strong>
+                                    <small>
+                                        Write down what's on your mind.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+
+                        <!-- SELF REFLECTION (dummy, page not built yet) -->
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <span class="resource-icon">
+                                    <i class="bi bi-chat-heart"></i>
+                                </span>
+                                <span>
+                                    <strong>Self Reflection</strong>
+                                    <small>
+                                        Pause and understand yourself.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+
+                        <!-- BREATHE (dummy, page not built yet) -->
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <span class="resource-icon">
+                                    <i class="bi bi-wind"></i>
+                                </span>
+                                <span>
+                                    <strong>Breathe</strong>
+                                    <small>
+                                        Take a calming moment.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+
+                        <!-- GROUND YOURSELF (dummy, page not built yet) -->
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <span class="resource-icon">
+                                    <i class="bi bi-flower1"></i>
+                                </span>
+                                <span>
+                                    <strong>Ground Yourself</strong>
+                                    <small>
+                                        Return to the present moment.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- LOGIN BUTTON -->
+            <div class="nav-login" id="navLoginArea">
+                <a href="login.html" class="login-btn">Login<i class="bi bi-arrow-up-right"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!-- REGISTER -->
+<section class="auth-section">
+    <div class="container">
+        <div class="auth-card">
+            <p class="section-eyebrow">CREATE ACCOUNT</p>
+            <h1>
+                Join
+                <span>Serein.</span>
+            </h1>
+            <p class="auth-description">
+                Create an account to save your journal entries and keep
+                track of your consultations.
+            </p>
+
+            <form onsubmit="return false;">
+                <label for="ruser">Username</label>
+                <input type="text" id="ruser" placeholder="Choose a username">
+
+                <label for="rpsw">Password</label>
+                <input type="password" id="rpsw" placeholder="Choose a password">
+
+                <button type="button" onclick="registerUser()">Register</button>
+
+                <p id="message" class="form-message"></p>
+            </form>
+
+            <p class="auth-switch">
+                Already have an account? <a href="login.html">Login</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="serein-footer">
+    <div class="container">
+        <div class="row g-4 footer-main">
+            <div class="col-lg-5">
+                <a href="index.html" class="footer-brand">
+                    <span class="brand-icon">
+                        <i class="bi bi-droplet-half"></i>
+                    </span>
+                    <span class="brand-name">SEREIN</span>
+                </a>
+                <p class="footer-tagline">Pause. Breathe. Begin again.</p>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <h4>Explore</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="consult.html">Consultation</a>
+                <a href="media.html">Media & Awards</a>
+            </div>
+
+            <div class="col-lg-4 col-md-8">
+                <h4>Connect</h4>
+                <a href="">Instagram</a>
+                <a href="">WhatsApp</a>
+                <a href="">hello@serein.com</a>
+
+                <div class="footer-socials">
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-whatsapp"></i></a>
+                    <a href=""><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Serein. All rights reserved.</p>
+            <p>Made with care <i class="bi bi-flower1"></i></p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="storage.js"></script>
+</body>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Serein-Your little space to pause, breathe and reflect.</title>
+</head>
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg serene-navbar sticky-top">
+    <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand serene-brand" href="index.html">
+            <span class="brand-icon">
+                <i class="bi bi-droplet-half"></i>
+            </span>
+            <span class="brand-name">
+                SEREIN
+            </span>
+        </a>
+
+        <!-- MOBILE TOGGLER -->
+        <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#sereneNavbar"
+            aria-controls="sereneNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <!-- NAVIGATION -->
+        <div class="collapse navbar-collapse"
+            id="sereneNavbar">
+            <ul class="navbar-nav mx-auto align-items-lg-center">
+
+                <!-- HOME -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <!-- ABOUT -->
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <!-- CONSULTATION -->
+                <li class="nav-item">
+                    <a class="nav-link" href="consult.html">Consultation</a>
+                </li>
+
+                <!-- MEDIA & AWARDS -->
+                <li class="nav-item">
+                    <a class="nav-link" href="media.html"> Media & Awards </a>
+                </li>
+
+                <!-- RESOURCES DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button"  data-bs-toggle="dropdown" aria-expanded="false"> Resources </a>
+                    <ul class="dropdown-menu resources-menu"
+                        aria-labelledby="resourcesDropdown">
+                        <!-- JOURNAL -->
+                        <li>
+                            <a class="dropdown-item" href="journal.html">
+                                <span class="resource-icon">
+                                    <i class="bi bi-journal-text"></i>
+                                </span>
+                                <span>
+                                    <strong>Journal</strong>
+                                    <small>
+                                        Write down what's on your mind.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+
+                        <!-- SELF REFLECTION -->
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <span class="resource-icon">
+                                    <i class="bi bi-chat-heart"></i>
+                                </span>
+                                <span>
+                                    <strong>Self Reflection</strong>
+                                    <small>
+                                        Pause and understand yourself.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+
+                        <!-- BREATHE -->
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <span class="resource-icon">
+                                    <i class="bi bi-wind"></i>
+                                </span>
+                                <span>
+                                    <strong>Breathe</strong>
+                                    <small>
+                                        Take a calming moment.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+
+                        <!-- GROUND YOURSELF -->
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <span class="resource-icon">
+                                    <i class="bi bi-flower1"></i>
+                                </span>
+                                <span>
+                                    <strong>Ground Yourself</strong>
+                                    <small>
+                                        Return to the present moment.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <!-- LOGIN BUTTON -->
+            <div class="nav-login" id="navLoginArea"> 
+                <a href="login.html" class="login-btn">Login<i class="bi bi-arrow-up-right"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Hero section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center hero-row">
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-6 hero-content">
+                <p class="hero-eyebrow">
+                    A SPACE TO PAUSE, BREATHE & BEGIN AGAIN
+                </p>
+                <h1>
+                    You don't have to figure
+                    <span>everything out alone.</span>
+                </h1>
+                <p class="hero-description">
+                    Sometimes the first step is simply allowing yourself
+                    to pause. We're here when you're ready to take the
+                    next step towards feeling better.
+                </p>
+                <!-- HERO BUTTONS -->
+                <div class="hero-buttons">
+                    <!-- WhatsApp Button -->
+                    <a href="javascript:void(0)" class="hero-primary-btn"><i class="bi bi-whatsapp"></i>Talk to us on WhatsApp</a>
+                    <!-- Group Session -->
+                    <a href="javascript:void(0)" class="hero-secondary-btn">Join a Group Session<i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="col-lg-6">
+                <div class="hero-image-wrapper">
+                    <!-- Decorative circle -->
+                    <div class="hero-circle circle-one"></div>
+                    <div class="hero-circle circle-two"></div>
+                    <!-- Main Image -->
+                    <img src="HomeBG.jpeg" alt="A calm and supportive conversation" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Why choose us -->
+<section class="why-section" id="about">
+    <div class="container">
+        <!-- Heading -->
+        <div class="section-heading text-center">
+            <p class="section-eyebrow">
+                WHY SEREIN?
+            </p>
+            <h2>
+                A different kind of space
+                <span>for your wellbeing.</span>
+            </h2>
+            <p>
+                Support shouldn't feel intimidating. We've created
+                Serein to make taking that first step feel a little easier.
+            </p>
+        </div>
+
+        <!-- Why us cards -->
+        <div class="why-cards">
+            <!-- CARD 1 -->
+            <div class="why-card">
+                <img src="https://prezentium.com/wp-content/uploads/2024/12/Supportive-Communication.webp" alt="Supportive conversation">
+                <div class="why-overlay">
+                    <div class="why-content">
+                        <span class="why-number">01</span>
+                        <h3>
+                            You're heard,
+                            not judged.
+                        </h3>
+                        <p>
+                            A supportive space where your experiences
+                            and feelings are met with understanding.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="why-card">
+                <img src="https://www.betterup.com/hubfs/Blog%20Images/take%20time%20for%20yourself/woman-sitting-near-fireplace-with-phone-take-time-for-yourself.jpg" alt="Person taking time for themselves">
+                <div class="why-overlay">
+                    <div class="why-content">
+                        <span class="why-number">02</span>
+                        <h3>
+                            Move at your
+                            own pace.
+                        </h3>
+                        <p>
+                            There is no timeline for feeling better.
+                            Take the time and support you need.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="why-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0TNQjVdV22H92l4ZH40IyYpSrQBsfkvQsXoR31gUiOyrki52I3pWo3AhW&s=10" alt="People supporting each other">
+                <div class="why-overlay">
+                    <div class="why-content">
+                        <span class="why-number">03</span>
+                        <h3>
+                            Healing doesn't
+                            have to be lonely.
+                        </h3>
+                        <p>
+                            Connect, reflect, and grow alongside people
+                            who understand the importance of support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Growth/Impact Section-->
+<section class="growth-section">
+    <div class="container">
+        <!-- HEADING -->
+        <div class="growth-heading text-center">
+            <p class="growth-eyebrow">OUR IMPACT</p>
+            <h2>Every small step<span>counts.</span></h2>
+            <p>A growing community choosing to pause, reflect, and seek support. </p>
+        </div>
+
+        <!-- STATISTICS -->
+        <div class="row g-4 growth-stats">
+            <!-- STAT 1 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="growth-stat">
+                    <h3 class="counter" data-target="2500">0</h3>
+                    <span class="stat-plus">+</span>
+                    <p>People Reached</p>
+                </div>
+            </div>
+
+
+            <!-- STAT 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="growth-stat">
+                    <h3 class="counter" data-target="120">0</h3>
+                    <span class="stat-plus">+</span>
+                    <p>Group Sessions</p>
+                </div>
+            </div>
+
+            <!-- STAT 3 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="growth-stat">
+                    <h3 class="counter" data-target="500">0</h3>
+                    <span class="stat-plus">+</span>
+                    <p>Hours of Support </p>
+                </div>
+            </div>
+
+            <!-- STAT 4 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="growth-stat">
+                    <h3>4.8</h3>
+                    <span class="rating-star">★</span>
+                    <p>Community Rating</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+const counters = document.querySelectorAll(".counter");
+const speed = 50;
+const startCounter = (counter) => {
+    const target = +counter.getAttribute("data-target");
+    let count = 0;
+    const updateCounter = () => {
+        const increment = target / 100;
+        count += increment;
+        if (count < target) {
+            counter.innerText = Math.ceil(count);
+            setTimeout(updateCounter, speed);
+        } else {
+            counter.innerText = target;
+        }
+    };
+    updateCounter();
+};
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            counters.forEach(counter => {
+                startCounter(counter);
+            });
+            observer.disconnect();
+        }
+    });
+});
+observer.observe(document.querySelector(".growth-section"));
+</script>
+
+<!--Carousel-->
+<section class="reviews-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <p class="section-eyebrow">COMMUNITY VOICES</p>
+            <h2>Stories from our <span>community.</span></h2>
+            <p>Real experiences from people who chose to pause, reflect, and take a step forward.</p>
+        </div>
+
+        <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- REVIEW 1 -->
+                <div class="carousel-item active">
+                    <div class="review-card">
+                        <span class="quote-mark">“</span>
+                        <p class="review-text">
+                            Serein reminded me that I don't have to solve everything at once.
+                            Sometimes taking a moment to breathe is already progress.
+                        </p>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-author">— Anonymous</p>
+                    </div>
+                </div>
+
+                <!-- REVIEW 2 -->
+                <div class="carousel-item">
+                    <div class="review-card">
+                        <span class="quote-mark">“</span>
+                        <p class="review-text">
+                            I was nervous about joining a group session, but being around
+                            people who understood made the experience feel much easier.
+                        </p>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-author">— Anonymous</p>
+                    </div>
+                </div>
+
+                <!-- REVIEW 3 -->
+                <div class="carousel-item">
+                    <div class="review-card">
+                        <span class="quote-mark">“</span>
+                        <p class="review-text">
+                            The reflection exercises gave me a chance to slow down and
+                            understand what I was actually feeling.
+                        </p>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-author">— Anonymous</p>
+                    </div>
+                </div>
+
+                <!-- REVIEW 4 -->
+                <div class="carousel-item">
+                    <div class="review-card">
+                        <span class="quote-mark">“</span>
+                        <p class="review-text">
+                            What I liked most was that nothing felt rushed. It reminded
+                            me that taking care of myself doesn't have to be complicated.
+                        </p>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-author">— Anonymous</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- PREVIOUS -->
+            <button class="carousel-control-prev review-control"
+                type="button"
+                data-bs-target="#reviewCarousel"
+                data-bs-slide="prev">
+                <span class="review-arrow">
+                    <i class="bi bi-arrow-left"></i>
+                </span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <!-- NEXT -->
+            <button class="carousel-control-next review-control"
+                type="button"
+                data-bs-target="#reviewCarousel"
+                data-bs-slide="next">
+                <span class="review-arrow">
+                    <i class="bi bi-arrow-right"></i>
+                </span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+            <!-- INDICATORS -->
+            <div class="carousel-indicators review-indicators">
+                <button type="button"
+                    data-bs-target="#reviewCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"></button>
+
+                <button type="button"
+                    data-bs-target="#reviewCarousel"
+                    data-bs-slide-to="1"></button>
+
+                <button type="button"
+                    data-bs-target="#reviewCarousel"
+                    data-bs-slide-to="2"></button>
+
+                <button type="button"
+                    data-bs-target="#reviewCarousel"
+                    data-bs-slide-to="3"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Newsletter/Need help-->
+<section class="newsletter-section" id="contact">
+    <div class="container">
+        <div class="newsletter-box">
+            <div class="newsletter-content text-center">
+                <p class="section-eyebrow">STAY CONNECTED</p>
+                <h2>Need a little <span>pause?</span></h2>
+                <p>Get occasional reflections, helpful resources, and gentle reminders delivered to your inbox.</p>
+                
+                <form class="newsletter-form">
+                    <input type="email" class="form-control" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+
+                <small>No spam. Just meaningful things.</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Footer section-->
+<footer class="serein-footer">
+    <div class="container">
+        <div class="row g-4 footer-main">
+
+            <div class="col-lg-5">
+                <a href="#" class="footer-brand">
+                    <span class="brand-icon">
+                        <i class="bi bi-flower1"></i>
+                    </span>
+                    <span class="brand-name">SEREIN</span>
+                </a>
+                <p class="footer-tagline">
+                    Pause. Breathe. Begin again.
+                </p>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <h4>Explore</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="consult.html">Consultation</a>
+                <a href="media.html">Media & Awards</a>
+            </div>
+
+            <div class="col-lg-4 col-md-8">
+                <h4>Connect</h4>
+                <a href="#">Instagram</a>
+                <a href="#">WhatsApp</a>
+                <a href="mailto:hello@serein.com">hello@serein.com</a>
+
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="mailto:hello@serein.com" aria-label="Email">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Serein. All rights reserved.</p>
+            <p>Made with care <i class="bi bi-flower1"></i></p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="storage.js"></script>
+</body>
+</html>

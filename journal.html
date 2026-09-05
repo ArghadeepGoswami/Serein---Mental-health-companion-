@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="journal.css">
+    <title>Serein - Journal</title>
+</head>
+<body>
+
+ <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg serene-navbar sticky-top">
+    <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand serene-brand" href="index.html">
+            <span class="brand-icon">
+                <i class="bi bi-droplet-half"></i>
+            </span>
+            <span class="brand-name">
+                SEREIN
+            </span>
+        </a>
+
+        <!-- MOBILE TOGGLER -->
+        <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#sereneNavbar"
+            aria-controls="sereneNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <!-- NAVIGATION -->
+        <div class="collapse navbar-collapse"
+            id="sereneNavbar">
+            <ul class="navbar-nav mx-auto align-items-lg-center">
+
+                <!-- HOME -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <!-- ABOUT -->
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <!-- CONSULTATION -->
+                <li class="nav-item">
+                    <a class="nav-link" href="consult.html">Consultation</a>
+                </li>
+
+                <!-- MEDIA & AWARDS -->
+                <li class="nav-item">
+                    <a class="nav-link" href="media.html"> Media & Awards </a>
+                </li>
+
+                <!-- RESOURCES DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="resourcesDropdown" role="button"  data-bs-toggle="dropdown" aria-expanded="false"> Resources </a>
+                    <ul class="dropdown-menu resources-menu"
+                        aria-labelledby="resourcesDropdown">
+                        <!-- JOURNAL -->
+                        <li>
+                            <a class="dropdown-item" href="journal.html">
+                                <span class="resource-icon">
+                                    <i class="bi bi-journal-text"></i>
+                                </span>
+                                <span>
+                                    <strong>Journal</strong>
+                                    <small>
+                                        Write down what's on your mind.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+
+                        <!-- SELF REFLECTION (dummy, page not built yet) -->
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <span class="resource-icon">
+                                    <i class="bi bi-chat-heart"></i>
+                                </span>
+                                <span>
+                                    <strong>Self Reflection</strong>
+                                    <small>
+                                        Pause and understand yourself.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+
+                        <!-- BREATHE (dummy, page not built yet) -->
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <span class="resource-icon">
+                                    <i class="bi bi-wind"></i>
+                                </span>
+                                <span>
+                                    <strong>Breathe</strong>
+                                    <small>
+                                        Take a calming moment.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+
+                        <!-- GROUND YOURSELF (dummy, page not built yet) -->
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <span class="resource-icon">
+                                    <i class="bi bi-flower1"></i>
+                                </span>
+                                <span>
+                                    <strong>Ground Yourself</strong>
+                                    <small>
+                                        Return to the present moment.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- LOGIN BUTTON -->
+            <div class="nav-login" id="navLoginArea">
+                <a href="login.html" class="login-btn">Login<i class="bi bi-arrow-up-right"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!-- JOURNAL HERO -->
+<section class="journal-hero">
+    <div class="container">
+        <div class="journal-hero-box text-center">
+            <p class="section-eyebrow">YOUR JOURNAL</p>
+            <h1>
+                Write down
+                <span>what's on your mind.</span>
+            </h1>
+            <p class="journal-description">
+                No format to follow, no length to hit. Add a thought whenever
+                you need to, and remove it whenever you're ready to.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- JOURNAL APP -->
+<section class="journal-section">
+    <div class="container">
+        <div class="journal-wrapper">
+
+            <!-- ADD ENTRY -->
+            <div class="journal-card">
+                <textarea id="entryInput" rows="3" placeholder="What's on your mind today?"></textarea>
+                <button type="button" onclick="addEntry()">
+                    <i class="bi bi-plus-lg"></i>
+                    Add Entry
+                </button>
+            </div>
+
+            <!-- ENTRIES LIST -->
+            <ul id="journalList" class="journal-list"></ul>
+
+            <p id="emptyState" class="empty-state">Your thoughts will appear here.</p>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="serein-footer">
+    <div class="container">
+        <div class="row g-4 footer-main">
+            <div class="col-lg-5">
+                <a href="index.html" class="footer-brand">
+                    <span class="brand-icon">
+                        <i class="bi bi-droplet-half"></i>
+                    </span>
+                    <span class="brand-name">SEREIN</span>
+                </a>
+                <p class="footer-tagline">Pause. Breathe. Begin again.</p>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <h4>Explore</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="consult.html">Consultation</a>
+                <a href="media.html">Media & Awards</a>
+            </div>
+
+            <div class="col-lg-4 col-md-8">
+                <h4>Connect</h4>
+                <a href="">Instagram</a>
+                <a href="">WhatsApp</a>
+                <a href="">hello@serein.com</a>
+
+                <div class="footer-socials">
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-whatsapp"></i></a>
+                    <a href=""><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Serein. All rights reserved.</p>
+            <p>Made with care <i class="bi bi-flower1"></i></p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="storage.js"></script>
+<script>
+    function addEntry() {
+        let input = document.getElementById('entryInput');
+        let text = input.value.trim();
+
+        if (text === '') {
+            alert('Please write something before adding.');
+            return;
+        }
+
+        let li = document.createElement('li');
+        li.className = 'journal-item';
+
+        let content = document.createElement('div');
+        content.className = 'journal-item-content';
+
+        let p = document.createElement('p');
+        p.textContent = text;
+
+        let date = document.createElement('small');
+        date.textContent = new Date().toLocaleDateString('en-US', {
+            month: 'short',
+            day: 'numeric',
+            year: 'numeric'
+        });
+
+        content.appendChild(p);
+        content.appendChild(date);
+
+        let deleteBtn = document.createElement('button');
+        deleteBtn.type = 'button';
+        deleteBtn.className = 'journal-delete';
+        deleteBtn.innerHTML = '<i class="bi bi-trash3"></i>';
+        deleteBtn.onclick = function () {
+            li.remove();
+            toggleEmptyState();
+        };
+
+        li.appendChild(content);
+        li.appendChild(deleteBtn);
+
+        document.getElementById('journalList').appendChild(li);
+
+        input.value = '';
+        toggleEmptyState();
+    }
+
+    function toggleEmptyState() {
+        let list = document.getElementById('journalList');
+        let empty = document.getElementById('emptyState');
+        empty.style.display = list.children.length === 0 ? 'block' : 'none';
+    }
+</script>
+</body>
+</html>

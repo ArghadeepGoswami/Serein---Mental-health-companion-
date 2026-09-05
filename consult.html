@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="consult.css">
+    <title>Serein - Consultation</title>
+</head>
+<body>
+
+ <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg serene-navbar sticky-top">
+    <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand serene-brand" href="index.html">
+            <span class="brand-icon">
+                <i class="bi bi-droplet-half"></i>
+            </span>
+            <span class="brand-name">
+                SEREIN
+            </span>
+        </a>
+
+        <!-- MOBILE TOGGLER -->
+        <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#sereneNavbar"
+            aria-controls="sereneNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <!-- NAVIGATION -->
+        <div class="collapse navbar-collapse"
+            id="sereneNavbar">
+            <ul class="navbar-nav mx-auto align-items-lg-center">
+
+                <!-- HOME -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <!-- ABOUT -->
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <!-- CONSULTATION -->
+                <li class="nav-item">
+                    <a class="nav-link" href="consult.html">Consultation</a>
+                </li>
+
+                <!-- MEDIA & AWARDS -->
+                <li class="nav-item">
+                    <a class="nav-link" href="media.html"> Media & Awards </a>
+                </li>
+
+                <!-- RESOURCES DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button"  data-bs-toggle="dropdown" aria-expanded="false"> Resources </a>
+                    <ul class="dropdown-menu resources-menu"
+                        aria-labelledby="resourcesDropdown">
+                        <!-- JOURNAL -->
+                        <li>
+                            <a class="dropdown-item" href="journal.html">
+                                <span class="resource-icon">
+                                    <i class="bi bi-journal-text"></i>
+                                </span>
+                                <span>
+                                    <strong>Journal</strong>
+                                    <small>
+                                        Write down what's on your mind.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+
+                        <!-- SELF REFLECTION -->
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <span class="resource-icon">
+                                    <i class="bi bi-chat-heart"></i>
+                                </span>
+                                <span>
+                                    <strong>Self Reflection</strong>
+                                    <small>
+                                        Pause and understand yourself.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+
+                        <!-- BREATHE -->
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <span class="resource-icon">
+                                    <i class="bi bi-wind"></i>
+                                </span>
+                                <span>
+                                    <strong>Breathe</strong>
+                                    <small>
+                                        Take a calming moment.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+
+                        <!-- GROUND YOURSELF -->
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <span class="resource-icon">
+                                    <i class="bi bi-flower1"></i>
+                                </span>
+                                <span>
+                                    <strong>Ground Yourself</strong>
+                                    <small>
+                                        Return to the present moment.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <!-- LOGIN BUTTON -->
+            <div class="nav-login" id="navLoginArea"> 
+                <a href="login.html" class="login-btn">Login<i class="bi bi-arrow-up-right"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!-- CONSULTATION HERO -->
+<section class="consult-hero">
+    <div class="container">
+        <div class="row align-items-center consult-hero-row">
+            <div class="col-lg-6">
+                <p class="consult-eyebrow">PERSONALIZED SUPPORT</p>
+                <h1>
+                    Sometimes you just need..
+                    <span>Someone to listen</span>
+                </h1>
+                <p class="consult-description">
+                    Take a moment for yourself and connect with a supportive
+                    professional in a space designed around your comfort.
+                </p>
+                <div class="consult-buttons">
+                    <a href="#options" class="consult-primary-btn">
+                        Explore Consultations
+                        <i class="bi bi-arrow-down"></i>
+                    </a>
+                    <a class="consult-secondary-btn">
+                        <i class="bi bi-whatsapp"></i>
+                        Talk to Us
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="consult-hero-image">
+                    <div class="consult-circle"></div>
+                    <img src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_1_1200x1200/public/field_blog_entry_teaser_image/2019-07/adobestock_81846494.jpeg.jpg?itok=sxN9K89W" alt="A peaceful space representing mental wellbeing">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHAT WE OFFER -->
+<section class="offer-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <p class="section-eyebrow">WHAT WE OFFER</p>
+            <h2>Support that begins <span>with YOU</span></h2>
+            <p>
+                Every person has a different experience. Our consultation
+                options are designed to give you space to talk, reflect and
+                take your next step.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <i class="bi bi-person-heart"></i>
+                    </div>
+                    <h3>One-on-One</h3>
+                    <p>
+                        A private conversation where you can openly discuss
+                        what has been on your mind.
+                    </p>
+                    <span>Personalized support</span>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h3>Group Sessions</h3>
+                    <p>
+                        A guided environment where you can connect with others
+                        and feel less alone in your experiences.
+                    </p>
+                    <span>Shared experiences</span>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <i class="bi bi-chat-heart"></i>
+                    </div>
+                    <h3>Follow-Up Support</h3>
+                    <p>
+                        Continue your journey with additional conversations
+                        when you feel that you need them.
+                    </p>
+                    <span>Ongoing connection</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY CONSULTATION -->
+<section class="why-consult-section">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <div class="why-consult-image">
+                    <img src="HomeBG.jpeg" alt="Supportive conversation">
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <p class="section-eyebrow">WHY TAKE THE FIRST STEP?</p>
+                <h2>
+                    You don't need to have
+                    <span>everything figured out</span>
+                </h2>
+                <p class="why-consult-text">
+                    You can arrive exactly as you are. A consultation is simply
+                    a space to slow down, talk through what's happening and
+                    explore what might help.
+                </p>
+
+                <div class="benefit-list">
+                    <div class="benefit-item">
+                        <i class="bi bi-check2"></i>
+                        <span>A private and comfortable environment</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="bi bi-check2"></i>
+                        <span>Conversations centered around your needs</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="bi bi-check2"></i>
+                        <span>No pressure to have all the answers</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="bi bi-check2"></i>
+                        <span>A simple first step towards seeking support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="process-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <p class="section-eyebrow">HOW IT WORKS</p>
+            <h2>Three steps, <span>That's it!</span></h2>
+            <p>
+                Getting started doesn't have to feel complicated.
+            </p>
+        </div>
+
+        <div class="row g-4 process-row">
+            <div class="col-lg-4">
+                <div class="process-card">
+                    <span class="process-number">01</span>
+                    <div class="process-icon">
+                        <i class="bi bi-calendar-heart"></i>
+                    </div>
+                    <h3>Choose</h3>
+                    <p>
+                        Pick the consultation option that feels right for you.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="process-card">
+                    <span class="process-number">02</span>
+                    <div class="process-icon">
+                        <i class="bi bi-chat-dots"></i>
+                    </div>
+                    <h3>Connect</h3>
+                    <p>
+                        Get in touch with us and choose a suitable time.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="process-card">
+                    <span class="process-number">03</span>
+                    <div class="process-icon">
+                        <i class="bi bi-flower1"></i>
+                    </div>
+                    <h3>Begin</h3>
+                    <p>
+                        Take your time, talk openly and simply be present.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONSULTATION OPTIONS -->
+<section class="options-section" id="options">
+    <div class="container">
+        <div class="section-heading text-center">
+            <p class="section-eyebrow">FIND YOUR SPACE</p>
+            <h2>Choose what feels <span>right for you.</span></h2>
+        </div>
+
+        <div class="row justify-content-center g-4">
+            <div class="col-lg-5">
+                <div class="consult-option">
+                    <div class="option-top">
+                        <div class="offer-icon">
+                            <i class="bi bi-person-heart"></i>
+                        </div>
+                        <span class="option-label">INDIVIDUAL</span>
+                    </div>
+
+                    <h3>One-on-One Consultation</h3>
+                    <p>
+                        A private session focused entirely on your thoughts,
+                        concerns and personal experiences.
+                    </p>
+
+                    <ul>
+                        <li><i class="bi bi-check2"></i> Private conversation</li>
+                        <li><i class="bi bi-check2"></i> Personalized attention</li>
+                        <li><i class="bi bi-check2"></i> Flexible discussion</li>
+                    </ul>
+
+                    <a class="option-btn">
+                        Enquire Now
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="consult-option featured-option">
+                    <div class="option-top">
+                        <div class="offer-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <span class="option-label">GROUP</span>
+                    </div>
+
+                    <h3>In-Person Group Session</h3>
+                    <p>
+                        Join a guided group experience focused on connection,
+                        reflection and shared understanding.
+                    </p>
+
+                    <ul>
+                        <li><i class="bi bi-check2"></i> Guided session</li>
+                        <li><i class="bi bi-check2"></i> Supportive environment</li>
+                        <li><i class="bi bi-check2"></i> Meet others</li>
+                    </ul>
+
+                    <a href="#register" class="option-btn">
+                        Register Interest
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="consult-cta" id="register">
+    <div class="container">
+        <div class="consult-cta-box text-center">
+            <p class="section-eyebrow">TAKE THE FIRST STEP</p>
+            <h2>
+                You deserve a space
+                <span>to be heard.</span>
+            </h2>
+            <p>
+                Have questions before getting started? Reach out to us and
+                we'll help you understand which option may be right for you.
+            </p>
+            <a class="cta-button">
+                <i class="bi bi-whatsapp"></i>
+                Talk to Serein
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="serein-footer">
+    <div class="container">
+        <div class="row g-4 footer-main">
+            <div class="col-lg-5">
+                <a href="index.html" class="footer-brand">
+                    <span class="brand-icon">
+                        <i class="bi bi-droplet-half"></i>
+                    </span>
+                    <span class="brand-name">SEREIN</span>
+                </a>
+                <p class="footer-tagline">Pause. Breathe. Begin again.</p>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <h4>Explore</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="consult.html">Consultation</a>
+                <a href="#">Resources</a>
+            </div>
+
+            <div class="col-lg-4 col-md-8">
+                <h4>Connect</h4>
+                <a href="">Instagram</a>
+                <a href="">WhatsApp</a>
+                <a href="">hello@serein.com</a>
+
+                <div class="footer-socials">
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-whatsapp"></i></a>
+                    <a href=""><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Serein. All rights reserved.</p>
+            <p>Made with care <i class="bi bi-flower1"></i></p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="storage.js"></script>
+</body>
+</html>

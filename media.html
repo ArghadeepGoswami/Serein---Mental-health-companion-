@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="media.css">
+    <title>Serein - Media & Awards</title>
+</head>
+<body>
+
+ <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg serene-navbar sticky-top">
+    <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand serene-brand" href="index.html">
+            <span class="brand-icon">
+                <i class="bi bi-droplet-half"></i>
+            </span>
+            <span class="brand-name">
+                SEREIN
+            </span>
+        </a>
+
+        <!-- MOBILE TOGGLER -->
+        <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#sereneNavbar"
+            aria-controls="sereneNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <!-- NAVIGATION -->
+        <div class="collapse navbar-collapse"
+            id="sereneNavbar">
+            <ul class="navbar-nav mx-auto align-items-lg-center">
+
+                <!-- HOME -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <!-- ABOUT -->
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <!-- CONSULTATION -->
+                <li class="nav-item">
+                    <a class="nav-link" href="consult.html">Consultation</a>
+                </li>
+
+                <!-- MEDIA & AWARDS -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="media.html"> Media & Awards </a>
+                </li>
+
+                <!-- RESOURCES DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button"  data-bs-toggle="dropdown" aria-expanded="false"> Resources </a>
+                    <ul class="dropdown-menu resources-menu"
+                        aria-labelledby="resourcesDropdown">
+                        <!-- JOURNAL -->
+                        <li>
+                            <a class="dropdown-item" href="journal.html">
+                                <span class="resource-icon">
+                                    <i class="bi bi-journal-text"></i>
+                                </span>
+                                <span>
+                                    <strong>Journal</strong>
+                                    <small>
+                                        Write down what's on your mind.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+
+                        <!-- SELF REFLECTION -->
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <span class="resource-icon">
+                                    <i class="bi bi-chat-heart"></i>
+                                </span>
+                                <span>
+                                    <strong>Self Reflection</strong>
+                                    <small>
+                                        Pause and understand yourself.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+
+                        <!-- BREATHE -->
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <span class="resource-icon">
+                                    <i class="bi bi-wind"></i>
+                                </span>
+                                <span>
+                                    <strong>Breathe</strong>
+                                    <small>
+                                        Take a calming moment.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+
+                        <!-- GROUND YOURSELF -->
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <span class="resource-icon">
+                                    <i class="bi bi-flower1"></i>
+                                </span>
+                                <span>
+                                    <strong>Ground Yourself</strong>
+                                    <small>
+                                        Return to the present moment.
+                                    </small>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- LOGIN BUTTON -->
+            <div class="nav-login" id="navLoginArea">
+                <a href="login.html" class="login-btn">Login<i class="bi bi-arrow-up-right"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!-- MEDIA HERO -->
+<section class="media-hero">
+    <div class="container">
+        <div class="row align-items-center media-hero-row">
+            <div class="col-lg-7">
+                <p class="section-eyebrow">IN THE SPOTLIGHT</p>
+                <h1>
+                    Care that's been
+                    <span>noticed, and honored.</span>
+                </h1>
+                <p class="media-description">
+                    We built Serein quietly, for the people who use it. It's been
+                    humbling to see that quiet work recognized by the press and
+                    by the wellbeing community along the way.
+                </p>
+
+                <!-- STAT ROW -->
+                <div class="media-stats">
+                    <div class="media-stat">
+                        <span class="stat-number">12+</span>
+                        <span class="stat-label">Press Features</span>
+                    </div>
+                    <div class="media-stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Industry Awards</span>
+                    </div>
+                    <div class="media-stat">
+                        <span class="stat-number">2022</span>
+                        <span class="stat-label">Recognized Since</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="media-hero-badge">
+                    <div class="media-circle"></div>
+                    <i class="bi bi-award"></i>
+                    <span>Wellness Innovation Award<br>Winner, 2024</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AS FEATURED IN -->
+<section class="featured-in-section">
+    <div class="container">
+        <p class="featured-in-label">As featured in</p>
+        <div class="featured-in-row">
+            <span class="press-badge"><i class="bi bi-newspaper"></i> Mindful Living Weekly</span>
+            <span class="press-badge"><i class="bi bi-broadcast"></i> The Quiet Post</span>
+            <span class="press-badge"><i class="bi bi-journal-richtext"></i> Wellness Digest</span>
+            <span class="press-badge"><i class="bi bi-globe2"></i> CityScope Health</span>
+            <span class="press-badge"><i class="bi bi-mic"></i> HerSpace Magazine</span>
+            <span class="press-badge"><i class="bi bi-headphones"></i> The Calm Collective</span>
+        </div>
+    </div>
+</section>
+
+<!-- AWARDS TIMELINE -->
+<section class="awards-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <p class="section-eyebrow">RECOGNITION</p>
+            <h2>Honored for the <span>space we've built.</span></h2>
+            <p>
+                A short timeline of the moments the wellbeing community has
+                chosen to recognize Serein.
+            </p>
+        </div>
+
+        <div class="awards-timeline">
+
+            <!-- AWARD 2025 -->
+            <div class="award-item">
+                <div class="award-content">
+                    <div class="award-card">
+                        <div class="award-icon"><i class="bi bi-trophy"></i></div>
+                        <h3>People's Choice: Self-Care App</h3>
+                        <p>Calm Living Awards</p>
+                    </div>
+                </div>
+                <div class="award-marker"><span>2025</span></div>
+                <div class="award-spacer"></div>
+            </div>
+
+            <!-- AWARD 2024 -->
+            <div class="award-item reverse">
+                <div class="award-spacer"></div>
+                <div class="award-marker"><span>2024</span></div>
+                <div class="award-content">
+                    <div class="award-card">
+                        <div class="award-icon"><i class="bi bi-award"></i></div>
+                        <h3>Best Emerging Wellness Platform</h3>
+                        <p>Wellness Innovation Awards</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AWARD 2023a -->
+            <div class="award-item">
+                <div class="award-content">
+                    <div class="award-card">
+                        <div class="award-icon"><i class="bi bi-people"></i></div>
+                        <h3>Community Impact Award</h3>
+                        <p>Mental Health Alliance</p>
+                    </div>
+                </div>
+                <div class="award-marker"><span>2023</span></div>
+                <div class="award-spacer"></div>
+            </div>
+
+            <!-- AWARD 2023b -->
+            <div class="award-item reverse">
+                <div class="award-spacer"></div>
+                <div class="award-marker"><span>2023</span></div>
+                <div class="award-content">
+                    <div class="award-card">
+                        <div class="award-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                        <h3>Top 10 Digital Wellbeing Tools</h3>
+                        <p>HealthTech Review</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PRESS COVERAGE -->
+<section class="press-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <p class="section-eyebrow">PRESS COVERAGE</p>
+            <h2>Stories others have <span>told about us.</span></h2>
+            <p>
+                A few of the pieces that have covered Serein and the way we
+                approach everyday mental wellbeing.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="press-card">
+                    <div class="press-card-top">
+                        <span class="press-source">Mindful Living Weekly</span>
+                        <span class="press-date">Mar 2025</span>
+                    </div>
+                    <h3>The app treating "I'm fine" as an unfinished sentence</h3>
+                    <p>
+                        A look at how Serein's reflection prompts encourage
+                        people to sit with feelings instead of rushing past them.
+                    </p>
+                    <a href="#" class="press-link">Read the feature <i class="bi bi-arrow-up-right"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="press-card">
+                    <div class="press-card-top">
+                        <span class="press-source">CityScope Health</span>
+                        <span class="press-date">Nov 2024</span>
+                    </div>
+                    <h3>Group sessions without the waiting room feeling</h3>
+                    <p>
+                        On why Serein's in-person group sessions are designed
+                        to feel more like a conversation than a clinic visit.
+                    </p>
+                    <a href="#" class="press-link">Read the feature <i class="bi bi-arrow-up-right"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="press-card">
+                    <div class="press-card-top">
+                        <span class="press-source">Wellness Digest</span>
+                        <span class="press-date">Jun 2024</span>
+                    </div>
+                    <h3>Small, unhurried steps toward feeling better</h3>
+                    <p>
+                        A profile on the founders and the belief that support
+                        shouldn't feel intimidating to reach out for.
+                    </p>
+                    <a href="#" class="press-link">Read the feature <i class="bi bi-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- IN CONVERSATION -->
+<section class="conversation-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <p class="section-eyebrow">IN CONVERSATION</p>
+            <h2>Talks, interviews <span>and episodes.</span></h2>
+        </div>
+
+        <div class="conversation-list">
+            <div class="conversation-item">
+                <div class="conversation-icon"><i class="bi bi-mic"></i></div>
+                <div class="conversation-info">
+                    <h4>Building a space, not just an app</h4>
+                    <p>The Calm Collective Podcast &middot; Episode 42</p>
+                </div>
+                <a href="#" class="conversation-link">Listen <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="conversation-item">
+                <div class="conversation-icon"><i class="bi bi-play-circle"></i></div>
+                <div class="conversation-info">
+                    <h4>A conversation on everyday self-care</h4>
+                    <p>HerSpace Magazine &middot; Video interview</p>
+                </div>
+                <a href="#" class="conversation-link">Watch <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="conversation-item">
+                <div class="conversation-icon"><i class="bi bi-headphones"></i></div>
+                <div class="conversation-info">
+                    <h4>Designing for people, not diagnoses</h4>
+                    <p>Wellness Digest Talks &middot; Episode 07</p>
+                </div>
+                <a href="#" class="conversation-link">Listen <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="consult-cta">
+    <div class="container">
+        <div class="consult-cta-box text-center">
+            <p class="section-eyebrow">PRESS & PARTNERSHIPS</p>
+            <h2>
+                Working on a story
+                <span>about mental wellbeing?</span>
+            </h2>
+            <p>
+                For press inquiries, interviews, or partnership questions,
+                we'd love to hear from you.
+            </p>
+            <a href="mailto:press@serein.com" class="cta-button">
+                <i class="bi bi-envelope"></i>
+                Get in Touch
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="serein-footer">
+    <div class="container">
+        <div class="row g-4 footer-main">
+            <div class="col-lg-5">
+                <a href="index.html" class="footer-brand">
+                    <span class="brand-icon">
+                        <i class="bi bi-droplet-half"></i>
+                    </span>
+                    <span class="brand-name">SEREIN</span>
+                </a>
+                <p class="footer-tagline">Pause. Breathe. Begin again.</p>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <h4>Explore</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="consult.html">Consultation</a>
+                <a href="media.html">Media & Awards</a>
+            </div>
+
+            <div class="col-lg-4 col-md-8">
+                <h4>Connect</h4>
+                <a href="">Instagram</a>
+                <a href="">WhatsApp</a>
+                <a href="">hello@serein.com</a>
+
+                <div class="footer-socials">
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-whatsapp"></i></a>
+                    <a href=""><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Serein. All rights reserved.</p>
+            <p>Made with care <i class="bi bi-flower1"></i></p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="storage.js"></script>
+</body>
+</html>
